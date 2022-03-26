@@ -10,11 +10,17 @@
     <script>
         var suma = 0;
         function agregar(){
+            var suma = 0; // defino una variable local
             suma += 10;
+            if(suma>5){
+                suma = suma * 2;
+                console.log('condicion:',suma);
+            }
+            console.log('agregar:',suma);
         }
         agregar();
         agregar();
-        console.log(suma);
+        console.log('suma:',suma);
     </script>
 </body>
 </html>
