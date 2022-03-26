@@ -8,12 +8,13 @@
 </head>
 <body>
     <script>
-        var suma = 0;
+        var suma = 0; //defino una variable global
         function agregar(){
-            var suma = 0; // defino una variable local
+            let suma = 0; // defino una variable local
             suma += 10;
             if(suma>5){
-                suma = suma * 2;
+                let suma = 15; // defino una variable local
+                suma = suma *2;
                 console.log('condicion:',suma);
             }
             console.log('agregar:',suma);
